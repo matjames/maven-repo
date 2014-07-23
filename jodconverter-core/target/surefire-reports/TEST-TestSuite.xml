@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="4" time="22.809" errors="0" skipped="0" tests="9" name="TestSuite">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="23.25-b01"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/opt/tampere/tampere/jodconverter-core"/>
+    <property name="java.runtime.version" value="1.6.0_32-b32"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="basedir" value="/opt/tampere/tampere/jodconverter-core"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="/opt/tampere/tampere/jodconverter-core/target/surefire/surefirebooter2385325629626372213.jar"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk-amd64/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="surefire.test.class.path" value="/opt/tampere/tampere/jodconverter-core/target/test-classes:/opt/tampere/tampere/jodconverter-core/target/classes:/root/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar:/root/.m2/repository/org/openoffice/juh/3.2.1/juh-3.2.1.jar:/root/.m2/repository/org/openoffice/jurt/3.2.1/jurt-3.2.1.jar:/root/.m2/repository/org/openoffice/ridl/3.2.1/ridl-3.2.1.jar:/root/.m2/repository/org/openoffice/unoil/3.2.1/unoil-3.2.1.jar:/root/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/root/.m2/repository/org/hyperic/sigar/1.6.5.132/sigar-1.6.5.132.jar:/root/.m2/repository/org/json/json/20090211/json-20090211.jar:/root/.m2/repository/org/testng/testng/6.0.1/testng-6.0.1.jar:/root/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/root/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/root/.m2/repository/com/beust/jcommander/1.12/jcommander-1.12.jar:/root/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.2.0-4-amd64"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="user.name" value="root"/>
+    <property name="java.class.path" value="/opt/tampere/tampere/jodconverter-core/target/test-classes:/opt/tampere/tampere/jodconverter-core/target/classes:/root/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar:/root/.m2/repository/org/openoffice/juh/3.2.1/juh-3.2.1.jar:/root/.m2/repository/org/openoffice/jurt/3.2.1/jurt-3.2.1.jar:/root/.m2/repository/org/openoffice/ridl/3.2.1/ridl-3.2.1.jar:/root/.m2/repository/org/openoffice/unoil/3.2.1/unoil-3.2.1.jar:/root/.m2/repository/commons-cli/commons-cli/1.1/commons-cli-1.1.jar:/root/.m2/repository/org/hyperic/sigar/1.6.5.132/sigar-1.6.5.132.jar:/root/.m2/repository/org/json/json/20090211/json-20090211.jar:/root/.m2/repository/org/testng/testng/6.0.1/testng-6.0.1.jar:/root/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/root/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/root/.m2/repository/com/beust/jcommander/1.12/jcommander-1.12.jar:/root/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar:"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-6-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="/opt/tampere/tampere/jodconverter-core/target/surefire/surefirebooter2385325629626372213.jar /opt/tampere/tampere/jodconverter-core/target/surefire/surefire7997249880431053778tmp /opt/tampere/tampere/jodconverter-core/target/surefire/surefire8237458649681191340tmp"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_32"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/netx.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/plugin.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-6-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="11.068" classname="org.artofsolving.jodconverter.OfficeDocumentConverterFunctionalTest" name="runAllPossibleConversions"/>
+  <testcase time="0.013" classname="org.artofsolving.jodconverter.document.JsonDocumentFormatRegistryTest" name="readJsonRegistry"/>
+  <testcase time="2.016" classname="org.artofsolving.jodconverter.office.ExternalOfficeManagerTest" name="executeTask">
+    <failure message="could not connect to external office process" type="org.artofsolving.jodconverter.office.OfficeException">org.artofsolving.jodconverter.office.OfficeException: could not connect to external office process
+	at org.artofsolving.jodconverter.office.ExternalOfficeManager.connect(ExternalOfficeManager.java:78)
+	at org.artofsolving.jodconverter.office.ExternalOfficeManager.start(ExternalOfficeManager.java:52)
+	at org.artofsolving.jodconverter.office.ExternalOfficeManagerTest.executeTask(ExternalOfficeManagerTest.java:39)
+Caused by: java.net.ConnectException: connection failed: &apos;socket,host=127.0.0.1,port=2002,tcpNoDelay=1&apos;; java.net.ConnectException: Connection refused
+	at org.artofsolving.jodconverter.office.OfficeConnection.connect(OfficeConnection.java:94)
+	at org.artofsolving.jodconverter.office.ExternalOfficeManager.connect(ExternalOfficeManager.java:76)
+	... 37 more
+</failure>
+    <system-err>Jul 23, 2014 2:05:55 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString &apos;socket,host=127.0.0.1,port=2002,tcpNoDelay=1&apos; and profileDir &apos;/tmp/.jodconverter_socket_host-127.0.0.1_port-2002&apos;
+Jul 23, 2014 2:05:55 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process
+</system-err>
+  </testcase>
+  <testcase time="0.616" classname="org.artofsolving.jodconverter.office.PooledOfficeManagerTest" name="executeTask">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at org.artofsolving.jodconverter.office.PooledOfficeManagerTest.executeTask(PooledOfficeManagerTest.java:48)
+</failure>
+    <system-err>Jul 23, 2014 2:05:57 PM org.artofsolving.jodconverter.office.OfficeProcess prepareInstanceProfileDir
+WARNING: profile dir &apos;/tmp/.jodconverter_socket_host-127.0.0.1_port-2002&apos; already exists; deleting
+Jul 23, 2014 2:05:57 PM org.artofsolving.jodconverter.office.OfficeProcess deleteProfileDir
+WARNING: could not delete profileDir: Unable to delete directory /tmp/.jodconverter_socket_host-127.0.0.1_port-2002/user/uno_packages/cache/uno_packages.; renamed it to /tmp/.jodconverter_socket_host-127.0.0.1_port-2002.old.1406117157688
+Jul 23, 2014 2:05:57 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString &apos;socket,host=127.0.0.1,port=2002,tcpNoDelay=1&apos; and profileDir &apos;/tmp/.jodconverter_socket_host-127.0.0.1_port-2002&apos;
+Jul 23, 2014 2:05:57 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process
+Jul 23, 2014 2:05:58 PM org.artofsolving.jodconverter.office.OfficeConnection connect
+INFO: connected: &apos;socket,host=127.0.0.1,port=2002,tcpNoDelay=1&apos;
+</system-err>
+  </testcase>
+  <testcase time="2.531" classname="org.artofsolving.jodconverter.office.PooledOfficeManagerTest" name="restartAfterCrash">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at org.artofsolving.jodconverter.office.PooledOfficeManagerTest.restartAfterCrash(PooledOfficeManagerTest.java:90)
+</failure>
+    <system-err>Jul 23, 2014 2:05:58 PM org.artofsolving.jodconverter.office.OfficeProcess prepareInstanceProfileDir
+WARNING: profile dir &apos;/tmp/.jodconverter_socket_host-127.0.0.1_port-2002&apos; already exists; deleting
+Jul 23, 2014 2:05:58 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString &apos;socket,host=127.0.0.1,port=2002,tcpNoDelay=1&apos; and profileDir &apos;/tmp/.jodconverter_socket_host-127.0.0.1_port-2002&apos;
+Jul 23, 2014 2:05:58 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process
+Jul 23, 2014 2:05:58 PM org.artofsolving.jodconverter.office.OfficeConnection connect
+INFO: connected: &apos;socket,host=127.0.0.1,port=2002,tcpNoDelay=1&apos;
+</system-err>
+  </testcase>
+  <testcase time="3.548" classname="org.artofsolving.jodconverter.office.PooledOfficeManagerTest" name="restartAfterTaskTimeout">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at org.artofsolving.jodconverter.office.PooledOfficeManagerTest.restartAfterTaskTimeout(PooledOfficeManagerTest.java:126)
+</failure>
+    <system-err>Jul 23, 2014 2:06:00 PM org.artofsolving.jodconverter.office.OfficeProcess prepareInstanceProfileDir
+WARNING: profile dir &apos;/tmp/.jodconverter_socket_host-127.0.0.1_port-2002&apos; already exists; deleting
+Jul 23, 2014 2:06:00 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString &apos;socket,host=127.0.0.1,port=2002,tcpNoDelay=1&apos; and profileDir &apos;/tmp/.jodconverter_socket_host-127.0.0.1_port-2002&apos;
+Jul 23, 2014 2:06:00 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process
+Jul 23, 2014 2:06:00 PM org.artofsolving.jodconverter.office.OfficeConnection connect
+INFO: connected: &apos;socket,host=127.0.0.1,port=2002,tcpNoDelay=1&apos;
+Jul 23, 2014 2:06:02 PM org.artofsolving.jodconverter.office.OfficeProcess forciblyTerminate
+INFO: trying to forcibly terminate process: &apos;socket,host=127.0.0.1,port=2002,tcpNoDelay=1&apos;
+Jul 23, 2014 2:06:02 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess doTerminateProcess
+INFO: process forcibly terminated with code 0
+</system-err>
+  </testcase>
+  <testcase time="2.636" classname="org.artofsolving.jodconverter.office.PooledOfficeManagerTest" name="restartWhenMaxTasksPerProcessReached"/>
+  <testcase time="0.045" classname="org.artofsolving.jodconverter.process.ProcessManagerTest" name="linuxProcessManager"/>
+  <testcase time="0.016" classname="org.artofsolving.jodconverter.process.ProcessManagerTest" name="sigarProcessManager"/>
+</testsuite>

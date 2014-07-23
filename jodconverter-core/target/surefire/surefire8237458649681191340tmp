@@ -1,0 +1,5 @@
+#surefire
+#Wed Jul 23 14:05:44 CEST 2014
+user.dir=/opt/tampere/tampere/jodconverter-core
+localRepository=/root/.m2/repository
+basedir=/opt/tampere/tampere/jodconverter-core

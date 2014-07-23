@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 22.808 sec <<< FAILURE!
+executeTask(org.artofsolving.jodconverter.office.ExternalOfficeManagerTest)  Time elapsed: 2.015 sec  <<< FAILURE!
+org.artofsolving.jodconverter.office.OfficeException: could not connect to external office process
+	at org.artofsolving.jodconverter.office.ExternalOfficeManager.connect(ExternalOfficeManager.java:78)
+	at org.artofsolving.jodconverter.office.ExternalOfficeManager.start(ExternalOfficeManager.java:52)
+	at org.artofsolving.jodconverter.office.ExternalOfficeManagerTest.executeTask(ExternalOfficeManagerTest.java:39)
+Caused by: java.net.ConnectException: connection failed: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1'; java.net.ConnectException: Connection refused
+	at org.artofsolving.jodconverter.office.OfficeConnection.connect(OfficeConnection.java:94)
+	at org.artofsolving.jodconverter.office.ExternalOfficeManager.connect(ExternalOfficeManager.java:76)
+	... 37 more
+
+executeTask(org.artofsolving.jodconverter.office.PooledOfficeManagerTest)  Time elapsed: 0.615 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at org.artofsolving.jodconverter.office.PooledOfficeManagerTest.executeTask(PooledOfficeManagerTest.java:48)
+
+restartAfterCrash(org.artofsolving.jodconverter.office.PooledOfficeManagerTest)  Time elapsed: 2.53 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at org.artofsolving.jodconverter.office.PooledOfficeManagerTest.restartAfterCrash(PooledOfficeManagerTest.java:90)
+
+restartAfterTaskTimeout(org.artofsolving.jodconverter.office.PooledOfficeManagerTest)  Time elapsed: 3.548 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:480)
+	at org.testng.Assert.assertTrue(Assert.java:37)
+	at org.testng.Assert.assertTrue(Assert.java:47)
+	at org.artofsolving.jodconverter.office.PooledOfficeManagerTest.restartAfterTaskTimeout(PooledOfficeManagerTest.java:126)
+

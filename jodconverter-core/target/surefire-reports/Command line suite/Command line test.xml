@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="vm7.opus.fr" name="org.artofsolving.jodconverter.OfficeDocumentConverterFunctionalTest" tests="9" failures="4" timestamp="23 Jul 2014 12:06:07 GMT" time="22.518" errors="0">
+  <testcase name="runAllPossibleConversions" time="11.068" classname="org.artofsolving.jodconverter.OfficeDocumentConverterFunctionalTest"/>
+  <testcase name="readJsonRegistry" time="0.013" classname="org.artofsolving.jodconverter.document.JsonDocumentFormatRegistryTest"/>
+  <testcase name="executeTask" time="2.011" classname="org.artofsolving.jodconverter.office.ExternalOfficeManagerTest">
+    <failure type="org.artofsolving.jodconverter.office.OfficeException" message="could not connect to external office process">
+      <![CDATA[org.artofsolving.jodconverter.office.OfficeException: could not connect to external office process
+	at org.artofsolving.jodconverter.office.ExternalOfficeManager.connect(ExternalOfficeManager.java:78)
+	at org.artofsolving.jodconverter.office.ExternalOfficeManager.start(ExternalOfficeManager.java:52)
+	at org.artofsolving.jodconverter.office.ExternalOfficeManagerTest.executeTask(ExternalOfficeManagerTest.java:39)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+Caused by: java.net.ConnectException: connection failed: 'socket,host=127.0.0.1,port=2002,tcpNoDelay=1'; java.net.ConnectException: Connection refused
+	at org.artofsolving.jodconverter.office.OfficeConnection.connect(OfficeConnection.java:94)
+	at org.artofsolving.jodconverter.office.ExternalOfficeManager.connect(ExternalOfficeManager.java:76)
+	... 37 more
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="executeTask" time="0.614" classname="org.artofsolving.jodconverter.office.PooledOfficeManagerTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at org.artofsolving.jodconverter.office.PooledOfficeManagerTest.executeTask(PooledOfficeManagerTest.java:48)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="restartAfterCrash" time="2.528" classname="org.artofsolving.jodconverter.office.PooledOfficeManagerTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at org.artofsolving.jodconverter.office.PooledOfficeManagerTest.restartAfterCrash(PooledOfficeManagerTest.java:90)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="restartAfterTaskTimeout" time="3.547" classname="org.artofsolving.jodconverter.office.PooledOfficeManagerTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at org.artofsolving.jodconverter.office.PooledOfficeManagerTest.restartAfterTaskTimeout(PooledOfficeManagerTest.java:126)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:60)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:153)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="restartWhenMaxTasksPerProcessReached" time="2.636" classname="org.artofsolving.jodconverter.office.PooledOfficeManagerTest"/>
+  <testcase name="linuxProcessManager" time="0.045" classname="org.artofsolving.jodconverter.process.ProcessManagerTest"/>
+  <testcase name="sigarProcessManager" time="0.016" classname="org.artofsolving.jodconverter.process.ProcessManagerTest"/>
+</testsuite>
